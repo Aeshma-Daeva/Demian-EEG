@@ -13,7 +13,7 @@ dependencies = ["numpy>=1.26", "torch>=2.0"]
 test = ["pytest>=8.0"]
 
 [tool.setuptools.packages.find]
-include = ["demian_eeg*", "demian_v1*"]
+include = ["demian_eeg*", "demian_v1*", "development*", "legacy*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -24,6 +24,8 @@ python examples/synthetic_observer.py
 
 The example writes a JSON summary, per-window metrics, coupling vectors, and snapshots under `artifacts/example/`.
 
+The repository vendors the exact minimal Demian v1 runtime dependency needed by the adapter so that a checkout is independently runnable. The canonical runtime and its broader controls remain in [Demian-Substrate](https://github.com/Aeshma-Daeva/Demian-Substrate).
+
 ## Evidence boundary
 
 See [CLAIMS.md](CLAIMS.md). No raw EEG, subject identifiers, or private datasets are included. The fixture is generated locally and deterministically.
