@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demian-eeg"
+version = "0.1.0"
+description = "Synthetic EEG observer for testing recurrent state, ordering, and deterministic restore"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "torch>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["demian_eeg*", "demian_v1*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
