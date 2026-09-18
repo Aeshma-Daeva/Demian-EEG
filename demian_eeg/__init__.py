@@ -8,15 +8,15 @@ from demian_eeg.features import (
     window_eeg,
 )
 from demian_eeg.observer import (
-    EEGObservationResult,
     EEGObserverConfig,
+    EEGObserverResult,
     run_observer_from_array,
     write_observer_outputs,
 )
 
 __all__ = [
-    "EEGObservationResult",
     "EEGObserverConfig",
+    "EEGObserverResult",
     "bandpower_features",
     "fold_features",
     "robust_normalize",
